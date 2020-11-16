@@ -1,0 +1,15 @@
+:root {
+  --zero-color: #83878aa3;
+  --first-color: #ecedee;
+  --second-color: #2b4658;
+  --third-color: #fcf4a6;
+  --fourth-color: #676667;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}

@@ -36,7 +36,7 @@
 > - border
 > - border-radius
 
-> If you want your page to link to GitHub or LinkedIn, you can use the following links in the src attribute of your img tag:
+> If you want your page to link to GitHub or LinkedIn, you can use the following links in the ```src``` attribute of your ```img``` tag:
 
 > - GitHub:
 > https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png
