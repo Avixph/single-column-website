@@ -1,9 +1,11 @@
 :root {
-  --zero-color: #83878aa3;
-  --first-color: #ecedee;
-  --second-color: #2b4658;
-  --third-color: #fcf4a6;
-  --fourth-color: #676667;
+  --first-color: #fcf4a6;
+  --second-color: #f98e9e;
+  --third-color: #fce9a6;
+  --fourth-color: #5e5d5e;
+  --fifth-color: #000000;
+  --first-font: "Comfortaa";
+  --second-font: "Montserrat";
 }
 
 *,
@@ -11,5 +13,232 @@
 *:after {
   padding: 0;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--first-font), cursive;
+  font-weight: normal;
+}
+
+/* Body content */
+body {
+  margin: 0;
+  color: var(--fifh-color);
+  line-height: 1.4;
+  font-size: 20px;
+  background: var(--third-color);
+}
+
+/* Container content */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+/* header content */
+header {
+  background: var(--first-color);
+  padding: 2px 0;
+  overflow: hidden;
+  display: flex;
+}
+header .logo {
+  color: var(--fifth-color);
+  font-size: 40px;
+  float: left;
+}
+header nav {
+  float: right;
+  margin-top: 10px;
+  justify-content: flex-end;
+  justify-content: space-between;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 0 0 30px;
+}
+header nav ul li a {
+  font-family: var(--second-font), sans-serif;
+  font-size: 20px;
+  color: var(--fourth-color);
+}
+header nav ul li a:hover {
+  color: var(--second-color);
+}
+
+/* main content */
+.main {
+  margin-top: 200px;
+}
+.name-header {
+  /* width: 1000px;
+  display: flex; */
+  /* margin-left: 100px; */
+  /* margin: 0;
+  margin-bottom: 100px; */
+  /* vertical-align: top; */
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: -70;
+  height: 60vh;
+  background-image: url(../images/Laptop_Desk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-size: 100vh;
+  
+  /* overflow: hidden;
+  display: flex;
+  background-image: url(../images/Laptop_Desk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-size: 900px; */
+}
+.name-header h1 {
+  color: var(--fifth-color);
+  font-size: 60px;
+}
+.name-header h3 {
+  color: var(--fourth-color);
+  font-size: 25px;
+  margin-top: -100;
+}
+.about-me {
+  /* width: 240px;
+  display: inline-block;
+  vertical-align: top; */
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me img {
+  width: 400px;
+  border-radius: 10px;
+}
+/* Project content */
+.project {
+  align-content: center;
+  float: left;
+  width: 33%;
+  padding: 10px;
+  height: 200px;
+  margin: 0px 10px 10px 10px;
+}
+.project img {
+  width: 400px;
+}
+.project-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Contact-me content */
+.contact-me-container {
+  font-size: 48px;
+  padding: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+h5 {
+  line-height: 30px;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px 0px;
+  margin-top: 30px;
+}
+#contact-me {
+  background-size: cover;
+  position: relative;
+  padding: 15px;
+  width: 460px;
+  height: 360px;
+  display: inline-block;
+  background-color: var(--first-color);
+  box-shadow: var(--first-shawdow);
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.name-input,
+.email-input {
+  padding: 10px;
+  align-items: center;
+  text-align: initial;
+  font-size: 15px;
+  border: 1px solid var(--fourth-color);
+  font-family: var(--second-font), sans-serif;
+  color: var(--fourth-color);
+  outline: none;
+  width: 400px;
+  background: transparent;
+  border-radius: 5px;
+}
+.message-input {
+  padding: 10px;
+  align-items: center;
+  text-align: initial;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  border: 1px solid var(--fourth-color);
+  color: var(--fourth-color);
+  outline: none;
+  width: 400px;
+  height: 100px;
+  background: transparent;
+  border-radius: 5px;
+  resize: none;
+}
+.name-input:focus,
+.email-input:focus,
+.message-input:focus {
+  box-shadow: 0 0 3px var(--fourth-color);
+  color: var(--fifth-color);
+}
+
+/* Buttons */
+button {
+  border-radius: 10px;
+  font-weight: 800;
+  padding: 12px 0;
+  width: 280px;
+  font-size: 24px;
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--fourth-color);
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  background: transparent;
+  color: var(--fourth-color);
+}
+button:hover,
+button:active {
+  border: 2px solid var(--second-color);
+  color: var(--fifth-color);
+}
+
+/* footer content*/
+footer {
+  background: var(--first-color);
+  padding: 10px 0 20px;
+  text-align: center;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 15px 5px;
+}
+footer img {
+  width: 45px;
+}
+footer p {
+  font-size: 12px;
+  color: var(--fifth-color);
+  font-weight: 600;
 }
